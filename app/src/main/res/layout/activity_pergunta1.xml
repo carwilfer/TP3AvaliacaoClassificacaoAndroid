@@ -45,24 +45,28 @@
             android:id="@+id/radioButton1DaPergunta1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="actionBtnSelecionaResposta"
             android:text="Menos de 6 meses" />
 
         <RadioButton
             android:id="@+id/radioButton2DaPergunta1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="actionBtnSelecionaResposta"
             android:text="Entre 6 meses e 1 ano" />
 
         <RadioButton
             android:id="@+id/radioButton3DaPergunta1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="actionBtnSelecionaResposta"
             android:text="Entre 1 ano e 3 anos" />
 
         <RadioButton
             android:id="@+id/radioButton4DaPergunta1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="actionBtnSelecionaResposta"
             android:text="Acima de 3 anos" />
 
     </RadioGroup>
