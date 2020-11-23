@@ -1,5 +1,6 @@
 package com.carwilfer.tp3avaliacaoclassificacaoandroid
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
@@ -26,7 +27,7 @@ class MainActivity : AppCompatActivity() {
                     count: Int,
                     after: Int
                 ) {
-                   // 
+                   //
                 }
 
                 override fun onTextChanged(text: CharSequence?, start: Int, before: Int, count: Int) {
@@ -38,8 +39,9 @@ class MainActivity : AppCompatActivity() {
         var HintEditTextTextPersonNome = editTextTextPersonNome.text
         editTextTextPersonNome.hint = "Carlos Ferreira"
 
-        buttonIniciar.setOnClickListener{
 
+        buttonIniciar.setOnClickListener{
+            startActivity(Intent(this, Pergunta1Activity::class.java ))
         }
 
 
