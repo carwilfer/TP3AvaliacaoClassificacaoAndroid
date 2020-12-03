@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/todasPerguntasFragment">
+
+    <fragment
+        android:id="@+id/todasPerguntasFragment"
+        android:name="com.carwilfer.tp3avaliacaoclassificacaoandroid.Pergunta1Fragment"
+        android:label="fragment_pergunta"
+        tools:layout="@layout/fragment_pergunta1">
+        <action
+            android:id="@+id/action_perguntaFragment_to_pergunta2Fragment"
+            app:destination="@id/pergunta2Fragment"
+            app:enterAnim="@anim/fragment_close_enter"
+            app:exitAnim="@anim/fragment_close_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/pergunta2Fragment"
+        android:name="com.carwilfer.tp3avaliacaoclassificacaoandroid.pergunta2Fragment"
+        android:label="Pergunta2Fragment"
+        tools:layout="@layout/fragment_pergunta2">
+        <action
+            android:id="@+id/action_pergunta2Fragment_to_pergunta3Fragment"
+            app:destination="@id/pergunta3Fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/pergunta3Fragment"
+        android:name="com.carwilfer.tp3avaliacaoclassificacaoandroid.Pergunta3Fragment"
+        android:label="Pergunta3Fragment"
+        tools:layout="@layout/fragment_pergunta3" >
+        <action
+            android:id="@+id/action_pergunta3Fragment_to_pergunta4Fragment"
+            app:destination="@id/pergunta4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pergunta4Fragment"
+        android:name="com.carwilfer.tp3avaliacaoclassificacaoandroid.Pergunta4Fragment"
+        android:label="Pergunta4Fragment" >
+        <action
+            android:id="@+id/action_pergunta4Fragment_to_pergunta5Fragment"
+            app:destination="@id/pergunta5Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pergunta5Fragment"
+        android:name="com.carwilfer.tp3avaliacaoclassificacaoandroid.Pergunta5Fragment"
+        android:label="Pergunta5Fragment" >
+        <action
+            android:id="@+id/action_pergunta5Fragment_to_pergunta6Fragment"
+            app:destination="@id/pergunta6Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pergunta6Fragment"
+        android:name="com.carwilfer.tp3avaliacaoclassificacaoandroid.Pergunta6Fragment"
+        android:label="Pergunta6Fragment" >
+        <action
+            android:id="@+id/action_pergunta6Fragment_to_pergunta7Fragment"
+            app:destination="@id/pergunta7Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pergunta7Fragment"
+        android:name="com.carwilfer.tp3avaliacaoclassificacaoandroid.Pergunta7Fragment"
+        android:label="Pergunta7Fragment" >
+        <action
+            android:id="@+id/action_pergunta7Fragment_to_pergunta10Fragment"
+            app:destination="@id/pergunta10Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pergunta10Fragment"
+        android:name="com.carwilfer.tp3avaliacaoclassificacaoandroid.Pergunta10Fragment"
+        android:label="Pergunta10Fragment" >
+        <action
+            android:id="@+id/action_pergunta10Fragment_to_pergunta11Fragment"
+            app:destination="@id/pergunta11Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pergunta11Fragment"
+        android:name="com.carwilfer.tp3avaliacaoclassificacaoandroid.Pergunta11Fragment"
+        android:label="Pergunta11Fragment" >
+        <action
+            android:id="@+id/action_pergunta11Fragment_to_resultadoActivity"
+            app:destination="@id/resultadoActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/resultadoActivity"
+        android:name="com.carwilfer.tp3avaliacaoclassificacaoandroid.ResultadoActivity"
+        android:label="activity_resultado"
+        tools:layout="@layout/activity_resultado" />
+
+
+</navigation>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pergunta7Fragment" >
+
+    <TextView
+        android:id="@+id/textViewQuestao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="QUESTIONÁRIO PARA ANÁLISE DE PERFIL DO INVESTIDOR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPergunta"
+        android:layout_width="372dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="7. Em relação as aplicações e rendimentos, em qual dessas situações você  se enquadra? "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestao" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupDaPergunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPergunta">
+
+        <RadioButton
+            android:id="@+id/radioButton1DaPergunta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Conto com o rendimento dessas aplicações para complementar minha renda mensal " />
+
+        <RadioButton
+            android:id="@+id/radioButton2DaPergunta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eventualmente posso resgatar parte das aplicações para fazer frente aos meus gastos. Contudo, não tenho intenção de resgatar no curto prazo e pretendo fazer aplicações regulares" />
+
+        <RadioButton
+            android:id="@+id/radioButton3DaPergunta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Não tenho intenção de resgatar no curto prazo, mas não pretendo realizar novas aplicações" />
+
+        <RadioButton
+            android:id="@+id/radioButton4DaPergunta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Não tenho intenção de resgatar no curto prazo e ainda pretendo fazer aplicações regulares" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonProximoDaPergunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="8dp"
+        android:text="Próxima"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupDaPergunta" />
+</androidx.constraintlayout.widget.ConstraintLayout>

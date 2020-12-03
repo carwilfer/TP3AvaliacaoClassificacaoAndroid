@@ -18,30 +18,28 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.073" />
 
-    <ImageView
-        android:id="@+id/imageViewLogoBanco"
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="130dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="118dp"
+        android:layout_marginTop="32dp"
+        android:text="Idealizadora Banco Paulista"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTituloQuestionario"
-        app:srcCompat="@drawable/LogoBanco" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewTituloQuestionario" />
 
     <TextView
         android:id="@+id/textViewSolicitacaoDeIdade"
         android:layout_width="395dp"
         android:layout_height="34dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:text="Olá! Conte-nos a sua idade para personalizarmos sua experiência;)"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewLogoBanco" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/textViewAnos"
@@ -82,7 +80,6 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewNome" />
@@ -104,20 +101,23 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:hint="abc@abc.com.br"
         android:text="Email:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonNome" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="329dp"
-        android:layout_height="19dp"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
-        android:hint="@abc.com"
+        android:hint="abc@abc.com.br"
         android:inputType="textEmailAddress"
         android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textViewEmail"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonNome" />
 
@@ -133,13 +133,16 @@
 
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="292dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="261dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
+        android:hint="****"
         android:inputType="textPassword"
         android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textViewSenha"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
 

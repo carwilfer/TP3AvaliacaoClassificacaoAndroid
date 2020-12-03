@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pergunta5Fragment" >
+
+    <TextView
+        android:id="@+id/textViewQuestao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="QUESTIONÁRIO PARA ANÁLISE DE PERFIL DO INVESTIDOR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPergunta"
+        android:layout_width="372dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="5. Caso as suas aplicações sofressem uma queda superior a 30%,  o que você faria? "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestao" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupDaPergunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPergunta">
+
+        <RadioButton
+            android:id="@+id/radioButton1DaPergunta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resgataria toda a aplicação e aplicaria na poupança " />
+
+        <RadioButton
+            android:id="@+id/radioButton2DaPergunta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manteria aplicação aguardando uma melhora do mercado" />
+
+        <RadioButton
+            android:id="@+id/radioButton3DaPergunta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aumentaria a aplicação para aproveitar as oportunidades do mercado" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonProximoDaPergunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="8dp"
+        android:text="Próxima"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupDaPergunta" />
+</androidx.constraintlayout.widget.ConstraintLayout>

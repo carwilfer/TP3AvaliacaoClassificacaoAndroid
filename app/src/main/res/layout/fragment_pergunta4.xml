@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pergunta4Fragment" >
+
+    <TextView
+        android:id="@+id/textViewQuestao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="QUESTIONÁRIO PARA ANÁLISE DE PERFIL DO INVESTIDOR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPergunta"
+        android:layout_width="377dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:text="4. Considerando seus rendimentos regulares, qual a porcentagem você  pretende reservar para aplicações financeiras?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.277"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestao" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupDaPergunta"
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPergunta">
+
+        <RadioButton
+            android:id="@+id/radioButton1DaPergunta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No máximo 25%" />
+
+        <RadioButton
+            android:id="@+id/radioButton2DaPergunta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entre 25,01 e 50%" />
+
+        <RadioButton
+            android:id="@+id/radioButton3DaPergunta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Acima de 50%  " />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonProximoDaPergunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="8dp"
+        android:text="Próxima"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupDaPergunta" />
+</androidx.constraintlayout.widget.ConstraintLayout>

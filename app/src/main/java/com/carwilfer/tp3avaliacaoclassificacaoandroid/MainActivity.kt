@@ -41,9 +41,13 @@ class MainActivity : AppCompatActivity() {
 
 
         buttonIniciar.setOnClickListener{
-            startActivity(Intent(this, Pergunta1Activity::class.java ))
+            ModelAppActivity.basePrincipal["usuario_principal"] = ModelAppActivity.UsuarioData(
+                editTextNumberIdade.text.toString(),
+                editTextTextPersonNome.text.toString(),
+                editTextTextEmailAddress.text.toString(),
+                editTextTextPassword.text.toString()
+            )
+            startActivity(Intent(this, TodasPerguntasActivity::class.java))
         }
-
-
     }
 }
