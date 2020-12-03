@@ -12,7 +12,7 @@ class Pergunta11Fragment : LogicaFragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        numeroQuestionario = 1
+        numeroQuestionario = 11
         classificacaoNoQuestionario = 0
     }
 
@@ -29,7 +29,9 @@ class Pergunta11Fragment : LogicaFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        view.findViewById<Button>(R.id.buttonProximoDaPergunta)?.setOnClickListener {
+        val btn = view.findViewById<Button>(R.id.buttonProximoDaPergunta)
+                btn.text = "Calcular pontuação"
+            btn?.setOnClickListener {
             processData(listOf(0, 1, 2, 4, 5))
             findNavController().navigate(R.id.action_pergunta11Fragment_to_resultadoActivity)
         }

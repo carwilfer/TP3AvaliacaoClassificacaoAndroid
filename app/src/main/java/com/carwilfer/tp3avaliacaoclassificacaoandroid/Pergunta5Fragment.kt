@@ -13,7 +13,7 @@ class Pergunta5Fragment : LogicaFragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        numeroQuestionario = 1
+        numeroQuestionario = 5
         classificacaoNoQuestionario = 0
     }
 

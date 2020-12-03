@@ -34,7 +34,7 @@ abstract class LogicaFragment : Fragment() {
                 questionario = 4
                 classificacao = scoreList[3]
             }
-            R.id.radioButton4DaPergunta -> {
+            R.id.radioButton5DaPergunta -> {
                 questionario = 5
                 classificacao = scoreList[4]
             }

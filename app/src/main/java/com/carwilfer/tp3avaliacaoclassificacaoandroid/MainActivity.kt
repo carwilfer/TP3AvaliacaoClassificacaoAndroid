@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         var HintEditTextNumberIdade = editTextNumberIdade.text
         editTextNumberIdade.hint = "26 anos"
 
-        editTextTextPersonNome.addTextChangedListener(
+        editTextPersonNome.addTextChangedListener(
             object : TextWatcher{
                 override fun afterTextChanged(s: Editable?) {
                    //
@@ -36,16 +36,19 @@ class MainActivity : AppCompatActivity() {
 
             }
         )
-        var HintEditTextTextPersonNome = editTextTextPersonNome.text
-        editTextTextPersonNome.hint = "Carlos Ferreira"
+        var HintEditTextTextPersonNome = editTextPersonNome.text
+        editTextPersonNome.hint = "Carlos Ferreira"
 
+
+        var HintEditTextTextPersonEmail = editTextEmailAddress.text
+        editTextEmailAddress.hint = "abc@abc.com.br"
 
         buttonIniciar.setOnClickListener{
             ModelAppActivity.basePrincipal["usuario_principal"] = ModelAppActivity.UsuarioData(
                 editTextNumberIdade.text.toString(),
-                editTextTextPersonNome.text.toString(),
-                editTextTextEmailAddress.text.toString(),
-                editTextTextPassword.text.toString()
+                editTextPersonNome.text.toString(),
+                editTextEmailAddress.text.toString(),
+                editTextPassword.text.toString()
             )
             startActivity(Intent(this, TodasPerguntasActivity::class.java))
         }
